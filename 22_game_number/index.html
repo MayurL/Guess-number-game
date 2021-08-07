@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+
+    <title>NUMBER GAME</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <!--Section 1 ,generate button -->
+    <div id="section1" class="container text-center mt-5">
+        <button class="btn btn-warning btn-lg" onclick="generate_number_btn_click()">Generate Number</button>
+    </div>
+
+
+    <!--section 2IMage,  guess number,  input field,  check -->
+    <div id="section2" class="container">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <!--IMG-->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQvq4du4gADhlLxgfQMs5R59yulB8z94SYG8Z4wO6JHWzesHjeC1QHMAx5OFqwbk2Ymc&usqp=CAU" alt=""/>
+                <p class="text-danger">Guess the number between 1 to 6</p>
+                <div class="form-group w-25 mx-auto"  >
+                    <input  type='text' placeholder="Enter number" class="form-control" id='field'/>
+
+                </div>
+                <button class="btn btn-primary btn-small mt-2" onclick="check_number()">
+                    CHECK
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+        img 
+        heading-generation number
+    -->
+    <div class="container text-center" id="section3">
+        <img class="img-fluid " style='width:250px' src="https://thumbs.gfycat.com/CluelessDefinitiveBongo-max-1mb.gif" alt=""/>
+    </div>
+</body>
+</html>
